@@ -2,7 +2,7 @@
 
 An exploratory data analysis of **6.3 million financial transactions**, identifying fraud patterns, behavioural signatures, and critical failures in the existing detection system — presented as an interactive, chart-driven report.
 
-📊 **[View Live Report →]([https://your-github-pages-url-here](https://p3rmary.github.io/Fraud-Analysis/))**
+ **[View Live Report →]([https://your-github-pages-url-here](https://p3rmary.github.io/Fraud-Analysis/))**
 
 ---
 
@@ -35,7 +35,7 @@ A key finding: the existing automated flagging system has a **true positive rate
 
 ## Report Sections
 
-1. **Setup & Data Loading** — Dataset overview and source files
+1. **Setup & Data Loading**  Dataset overview and source files
 2. **Key Metrics Summary** — KPI dashboard: fraud rate, volume, average amount
 3. **Fraud by Transaction Type** — Dual-axis bar chart: volume and fraud rate by type
 4. **Hourly Transaction Patterns** — 24-hour fraud rate vs. total transaction volume
@@ -110,11 +110,11 @@ fraud-analysis/
 
 ## Insights at a Glance
 
-**Why does 0.13% fraud rate actually mean $12 billion in losses?**
-Because fraud is not spread evenly — it is concentrated in a small number of extremely high-value transactions. The average fraudulent transaction is nearly $1.5 million, over 100× the average legitimate transaction size. Count-based fraud rates are misleading; volume-based rates tell the real story.
+**What does 0.13% fraud rate actually mean $12 billion in losses?**
+Because fraud is not spread evenly, it is concentrated in a small number of extremely high-value transactions. The average fraudulent transaction is nearly $1.5 million, over 100× the average legitimate transaction size. Count-based fraud rates are misleading; volume-based rates tell the real story.
 
 **Why is 03:00–05:00 so dangerous?**
 Legitimate transaction volume is lowest overnight, meaning even a flat absolute count of fraud transactions produces an extreme fraud rate. Fraudsters appear to time their activity deliberately to exploit reduced monitoring windows.
 
 **What does the detection failure mean in practice?**
-A 0.19% true positive rate means for every 1 fraud case caught, 512 others go undetected. The patterns identified in this analysis — overnight timing, maximum-value amounts, and `TRANSFER → CASH_OUT` sequences — provide a concrete signal set for building a rule-based or ML-driven detection layer that would dramatically outperform the current system.
+A 0.19% true positive rate means for every 1 fraud case caught, 512 others go undetected. The patterns identified in this analysis, overnight timing, maximum-value amounts, and `TRANSFER → CASH_OUT` sequences — provide a concrete signal set for building a rule-based or ML-driven detection layer that would dramatically outperform the current system.
