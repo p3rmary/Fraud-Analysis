@@ -2,7 +2,8 @@
 
 An exploratory data analysis of **6.3 million financial transactions**, identifying fraud patterns, behavioural signatures, and critical failures in the existing detection system — presented as an interactive, chart-driven report.
 
- **[View Live Report →]([https://your-github-pages-url-here](https://p3rmary.github.io/Fraud-Analysis/))**
+
+ **[View Live Report →]([https://p3rmary.github.io/Fraud-Analysis/])**
 
 ---
 
